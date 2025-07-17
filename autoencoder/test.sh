@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python test.py --dataset_path $1 --dataset_name $2 

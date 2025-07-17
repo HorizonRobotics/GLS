@@ -1,0 +1,62 @@
+build/
+dummy/
+!scripts/build
+builddir/
+conan-deps/
+distribute/
+lib/
+bin/
+dist/
+deps/*
+docs/build
+python/dist/
+docs/index.rst
+python/MANIFEST.in
+*.egg-info
+*.pyc
+*.pyi
+*.json
+*.bak
+*.zip
+wheels*/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+.cproject
+.project
+.settings/
+*.db
+*.bak
+.arcconfig
+.vscode/
+
+# files
+*.pack
+*.pcd
+*.html
+*.ply
+*.mp4
+# node
+node_modules
+
+# local files
+build.sh
+__pycache__/
+output*
+*.log
+scripts/tools/
+weights
+apps/sessions/
+apps/assets/

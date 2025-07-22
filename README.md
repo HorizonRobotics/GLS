@@ -68,7 +68,7 @@ Please follow [install.md](https://github.com/lkeab/gaussian-grouping/blob/main/
 
 ### Extract geometry cues
 
-Please follow [DSINE](https://github.com/baegwangbin/DSINE) to prepare normal priors, the result should be saved under ```normals````.
+Please follow [DSINE](https://github.com/baegwangbin/DSINE) to prepare normal priors, the result should be saved under ```normals```.
 
 Our model expect the following dataset structure in the source path location:
 ```

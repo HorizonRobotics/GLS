@@ -330,6 +330,9 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
             # depth_error, _ = torch.topk(depth_error, int(0.95*depth_error.size(0)), largest=False)
             # depth_loss_5 = depth_error.mean() 
 
+            mask4 = (normal_error > 0.1).detach() #& ~maskd
+            depth_loss_4 = 1.0 - torch.exp(-((depth2[mask4.unsqueeze(0)]-depth4[mask4.unsqueeze(0)].detach()).abs())).mean()
+            depth4 = mask4.float()*depth4
             loss += 0.01*depth_loss_4 #+ 0.3*depth_loss_5
  
             nearest_cam = None if len(viewpoint_cam.nearest_id) == 0 else scene.getTrainCameras()[random.sample(viewpoint_cam.nearest_id,1)[0]]

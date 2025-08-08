@@ -144,7 +144,7 @@ More demos are shown in [![Project Page](https://img.shields.io/badge/🌐-Proje
 
 ## Citation
 
-If you use EmbodiedGen in your research or projects, please cite:
+If you use GLS in your research or projects, please cite:
 
 ```bibtex
 @article{qiu2024gls,
